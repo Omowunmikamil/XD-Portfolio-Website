@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="body">
+    <section id="hearder">
+      <div class="nav">
+        <a href="">&lt;devowunmi&gt;</a>
+        <div class="nav-links" id="navLinks">
+          <a class="fa fa-times" onclick="closeMenu()"></a>
+          <ul>
+            <li><a href="#header">Home</a></li>
+            <li><a href="#skill">Skill</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#project">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="openMenu()"></i>
+      </div>
+      <div class="container">
+        <div class="hero">
+          <div class="front">
+            <img src="images/component3.png" />
+          </div>
+          <div class="user">
+            <h1>Hi, I am <br /><strong>Omowunmi Kamil</strong></h1>
+          </div>
+          <div class="back">
+            <p>FRONT-END DEV</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-----Skills----->
+    <section id="skill">
+      <h1>What I do</h1>
+      <div class="row">
+        <div class="skill-col">
+          <h3>Design + Development</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde,
+            pariatur! Labore aperiam mollitia reiciendis repellendus quasi
+            quibusdam minus nihil magni iure, officia ea architecto ullam quia
+            dolores ad ratione maxime.
+          </p>
+        </div>
+        <div class="skill-col">
+          <h3>E-commerce</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde,
+            pariatur! Labore aperiam mollitia reiciendis repellendus quasi
+            quibusdam minus nihil magni iure, officia ea architecto ullam quia
+            dolores ad ratione maxime.
+          </p>
+        </div>
+        <div class="skill-col">
+          <h3>WordPress</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde,
+            pariatur! Labore aperiam mollitia reiciendis repellendus quasi
+            quibusdam minus nihil magni iure, officia ea architecto ullam quia
+            dolores ad ratione maxime.
+          </p>
+        </div>
+      </div>
+
+      <div class="btn">See My Work</div>
+    </section>
+
+    <section id="about">
+      <div class="about-sec">
+        <div class="about-front">
+          <img src="images/component (1).png" />
+        </div>
+        <h1>Who Am I</h1>
+        <div class="about-back">
+          <h4>Designer & Developer based out of Nigeria</h4>
+        </div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil autem
+          similique et necessitatibus? Laudantium corporis, doloribus dolorem
+          magni odit aliquid tempore blanditiis? Minus odit odio voluptate at
+          adipisci voluptatibus cumque? <br /><br />Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Nihil autem similique et necessitatibus?
+          Laudantium corporis, doloribus dolorem magni odit aliquid tempore
+          blanditiis? Minus odit odio voluptate at adipisci voluptatibus cumque?
+        </p>
+      </div>
+    </section>
+
+    <!-----Project----->
+    <section id="project">
+      <h1>My work</h1>
+      <h4>A selection of my range of work</h4>
+      <div class="project-row">
+        <div class="project-col">
+          <img src="images/component (4).png" />
+        </div>
+        <div class="project-col">
+          <img src="images/component (5).png" />
+        </div>
+        <div class="project-col">
+          <img src="images/component (6).png" />
+        </div>
+        <div class="project-col">
+          <img src="images/component (7).png" />
+        </div>
+        <div class="project-col">
+          <img src="images/component (8).png" />
+        </div>
+        <div class="project-col">
+          <img src="images/component (10).png" />
+        </div>
+        <div class="project-col">
+          <img src="images/component (11).png" />
+        </div>
+        <div class="project-col">
+          <img src="images/component (12).png" />
+        </div>
+        <div class="project-col">
+          <img src="images/component (13).png" />
+        </div>
+        <div class="project-col">
+          <img src="images/component (14).png" />
+        </div>
+      </div>
+    </section>
+
+    <!-----Footer----->
+    <footer>
+      <div id="contact">
+        <p>balikiskamil@gmail.com</p>
+        <div class="socials">
+          <a href="https://www.linkedin.com/in/omowunmi-kamiludeen/"
+            ><i class="fa fa-linkedin"></i
+          ></a>
+          <a href="https://github.com/Omowunmikamil"
+            ><i class="fa fa-github"></i
+          ></a>
+          <a href="https://twitter.com/Dev_juin_io"
+            ><i class="fa fa-twitter"></i
+          ></a>
+          <a href="https://web.facebook.com/omowunmi.kamil"
+            ><i class="fa fa-facebook-official"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+
+    <!-----JAvaScript for toggle bar-->
+    <script>
+      let navLinks = document.getElementById("navLinks");
+      function openMenu() {
+        navLinks.style.right = "0";
+      }
+      function closeMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
